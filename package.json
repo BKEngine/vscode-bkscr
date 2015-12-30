@@ -1,14 +1,14 @@
 {
-	"name": "latex",
+	"name": "bkscr",
 	"version": "0.1.1",
-	"displayName": "LaTeX Language Support",
-	"description": "LaTeX - colorizer, grammar and snippets.",
-	"publisher": "ms-vscode",
-	"icon": "images/iconLaTeX.png",
+	"displayName": "bkscr Language Support",
+	"description": "bkscr - colorizer, grammar and snippets.",
+	"publisher": "Bakery",
+	"icon": "images/coco_onsl.png",
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-LaTeX.git"
+		"url": "https://git.coding.net/gjy/vscode-bkscr-highlight.git"
 	},
 	"categories": [
 		"Languages",
@@ -20,45 +20,26 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "latex",
+				"id": "bkscr",
 				"aliases": [
-					"LaTeX",
-					"latex"
+					"BKSCR"
 				],
 				"extensions": [
-					".tex"
+					".bkscr"
 				]
 			},
-			{
-				"id": "tex",
-				"aliases": [
-					"TeX",
-					"tex"
-				],
-				"extensions": [
-					".sty",
-					".cls",
-					".bbx",
-					".cbx"
-				]
-			}
 		],
 		"snippets": [
 			{
-				"language": "latex",
+				"language": "bkscr",
 				"path": "./snippets/snippets.json"
 			}
 		],
 		"grammars": [
 			{
-				"language": "latex",
-				"scopeName": "text.tex.latex",
-				"path": "./syntaxes/latex.tmLanguage"
-			},
-			{
-				"language": "tex",
-				"scopeName": "text.tex",
-				"path": "./syntaxes/tex.tmLanguage"
+				"language": "bkscr",
+				"scopeName": "text.bkscr",
+				"path": "./syntaxes/bkscr.tmLanguage"
 			}
 		]
 	}
