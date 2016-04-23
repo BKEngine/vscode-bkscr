@@ -6,8 +6,10 @@
 	<array>
 		<string>bkscr</string>
 	</array>
+    <key>scopeName</key>
+    <string>source.bkscr</string>
 	<key>name</key>
-	<string>bkscr</string>
+	<string>BKEngine Scripts</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -419,8 +421,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>scopeName</key>
-	<string>text.bkscr</string>
 	<key>uuid</key>
 	<string>6BC8DE6F-2333-4C7E-AC3C-971385945346</string>
 </dict>

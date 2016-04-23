@@ -26,8 +26,15 @@
 				],
 				"extensions": [
 					".bkscr"
-				]
+				],
+				"configuration": "./bkscr.configuration.json"
 			},
+			{
+				"id": "bagel",
+				"aliases": ["Bagel", "bagel"],
+				"extensions": [".bkpsr"],
+				"configuration": "./bagel.configuration.json"
+			}
 		],
 		"snippets": [
 			{
