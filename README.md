@@ -1,6 +1,6 @@
 # VSCode-bkscr README
 
-.bkscr is the extension name for BKEngine script files.
+.bkscr is the extension name for [BKEngine](https://bke.bakery.moe/index_en.html) script files.
 
 This extension gives the colorization of BKEngine script files.
 

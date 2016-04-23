@@ -1,62 +1,68 @@
 {
-	"name": "bkscr",
-	"version": "0.1.1",
-	"displayName": "bkscr Language Support",
-	"description": "bkscr - colorizer, grammar and snippets.",
-	"publisher": "Bakery",
-	"icon": "images/coco_onsl.png",
-	"license": "SEE LICENSE IN LICENSE.txt",
-	"repository": {
-		"type": "git",
-		"url": "https://git.coding.net/gjy/vscode-bkscr-highlight.git"
-	},
-	"categories": [
-		"Languages",
-		"Snippets"
-	],
-	"engines": {
-		"vscode": "0.10.x"
-	},
-	"contributes": {
-		"languages": [
-			{
-				"id": "bkscr",
-				"aliases": [
-					"BKEngine Script", "bkscr"
-				],
-				"extensions": [
-					".bkscr"
-				],
-				"configuration": "./bkscr.configuration.json"
-			},
-			{
-				"id": "bagel",
-				"aliases": ["Bagel", "bagel"],
-				"extensions": [".bkpsr"],
-				"configuration": "./bagel.configuration.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "bkscr",
-				"path": "./snippets/bkscr.json"
-			},
-			{
-				"language": "bagel",
-				"path": "./snippets/bagel.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "bkscr",
-				"scopeName": "source.bkscr",
-				"path": "./syntaxes/bkscr.tmLanguage"
-			},
-			{
-				"language": "bagel",
-				"scopeName": "source.bagel",
-				"path": "./syntaxes/bagel.tmLanguage"
-			}
-		]
-	}
+    "name": "bkscr",
+    "version": "0.1.2",
+    "displayName": "bkscr - BKEngine Script Language Support",
+    "description": "bkscr - colorizer, grammar and snippets.",
+    "publisher": "Bakery",
+    "icon": "images/coco_onsl.png",
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "repository": {
+        "type": "git",
+        "url": "https://git.coding.net/gjy/vscode-bkscr.git"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "engines": {
+        "vscode": "0.10.x"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "bkscr",
+                "aliases": [
+                    "BKEngine Script",
+                    "bkscr"
+                ],
+                "extensions": [
+                    ".bkscr"
+                ],
+                "configuration": "./bkscr.configuration.json"
+            },
+            {
+                "id": "bagel",
+                "aliases": [
+                    "Bagel",
+                    "bagel"
+                ],
+                "extensions": [
+                    ".bkpsr"
+                ],
+                "configuration": "./bagel.configuration.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "bkscr",
+                "path": "./snippets/bkscr.json"
+            },
+            {
+                "language": "bagel",
+                "path": "./snippets/bagel.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "bkscr",
+                "scopeName": "source.bkscr",
+                "path": "./syntaxes/bkscr.tmLanguage"
+            },
+            {
+                "language": "bagel",
+                "scopeName": "source.bagel",
+                "path": "./syntaxes/bagel.tmLanguage"
+            }
+        ]
+    }
 }
