@@ -22,7 +22,7 @@
 			{
 				"id": "bkscr",
 				"aliases": [
-					"BKSCR"
+					"BKEngine Script", "bkscr"
 				],
 				"extensions": [
 					".bkscr"
@@ -39,14 +39,23 @@
 		"snippets": [
 			{
 				"language": "bkscr",
-				"path": "./snippets/snippets.json"
+				"path": "./snippets/bkscr.json"
+			},
+			{
+				"language": "bagel",
+				"path": "./snippets/bagel.json"
 			}
 		],
 		"grammars": [
 			{
 				"language": "bkscr",
-				"scopeName": "text.bkscr",
+				"scopeName": "source.bkscr",
 				"path": "./syntaxes/bkscr.tmLanguage"
+			},
+			{
+				"language": "bagel",
+				"scopeName": "source.bagel",
+				"path": "./syntaxes/bagel.tmLanguage"
 			}
 		]
 	}
