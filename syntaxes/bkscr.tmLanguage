@@ -30,6 +30,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#bagelscript2</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#linecommand</string>
 		</dict>
 		<dict>
@@ -142,6 +146,21 @@
 			<array>
 		</dict>
 				
+		<key>bagelscript2</key>
+		<dict>
+			<key>begin</key>
+			<string>^\t*#</string>
+			<key>end</key>
+			<string>$</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.bagel</string>
+				</dict>
+			<array>
+		</dict>
+
 		<key>atcommand</key>
 		<dict>
 			<key>begin</key>
