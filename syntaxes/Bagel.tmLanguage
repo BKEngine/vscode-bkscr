@@ -122,7 +122,7 @@
 		<key>variable</key>
 		<dict>
 			<key>match</key>
-			<string>\b([_A-Za-z][_A-Za-z0-9]*)\b</string>
+			<string>\b((?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*)\b</string>
 			<key>name</key>
 			<string>variable.other.bagel</string>
 		</dict>
@@ -130,10 +130,10 @@
 		<key>variable2</key>
 		<dict>
 			<key>match</key>
-			<string>(\.([_A-Za-z][_A-Za-z0-9]*))\b</string>
+			<string>\.((?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*)\b</string>
 			<key>captures</key>
 			<dict>
-				<key>2</key>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>variable.other.bagel</string>
@@ -359,7 +359,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(function)\s+([a-zA-Z_]\w*)?\s*(?={)</string>
+			<string>\b(function)\s+((?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*)?\s*(?={)</string>
 			<key>name</key>
 			<string>meta.function.bagel</string>
 		</dict>
@@ -385,7 +385,7 @@
 				</dict>
 			</dict>
 			<key>begin</key>
-			<string>\b(function)\s+([a-zA-Z_]\w*)?\s*(\()</string>
+			<string>\b(function)\s+((?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*)?\s*(\()</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>endCaptures</key>
@@ -408,19 +408,19 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\*[A-Za-z_][A-Za-z_0-9]*(?=\s*\))</string>
+					<string>\*(?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*(?=\s*\))</string>
 					<key>name</key>
 					<string>variable.parameter.function.bagel</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\*[A-Za-z_][A-Za-z_0-9]*(?!\s*\))</string>
+					<string>\*(?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*(?!\s*\))</string>
 					<key>name</key>
 					<string>invalid.illegal.bagel</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b[A-Za-z_][A-Za-z_0-9]*</string>
+					<string>\b(?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*</string>
 					<key>name</key>
 					<string>variable.parameter.function.bagel</string>
 				</dict>
@@ -440,13 +440,13 @@
 			<key>name</key>
 			<string>support.function.any-method.bagel</string>
 			<key>match</key>
-			<string>\b([A-Za-z_]\w*)\b(?=\s*\([^)]*\))</string>
+			<string>\b((?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*)\b(?=\s*\([^)]*\))</string>
 		</dict>
 		
 		<key>classcall</key>
 		<dict>
 			<key>match</key>
-			<string>\b(new)\s+([_A-Za-z]\w*)\b(?=\s*\([^)]*\))</string>
+			<string>\b(new)\s+((?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*)\b(?=\s*\([^)]*\))</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -488,7 +488,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(class)\s+([a-zA-Z_]\w*)(?:\s+(extends)\s+(.*))?</string>
+			<string>\b(class)\s+((?:[A-Za-z_]|[^\x00-\x80])(?:[A-Za-z0-9_]|[^\x00-\x80])*)(?:\s+(extends)\s+(.*))?</string>
 			<key>name</key>
 			<string>meta.function.bagel</string>
 		</dict>
