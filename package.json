@@ -1,6 +1,6 @@
 {
     "name": "bkscr",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "displayName": "bkscr - BKEngine Script Language Support",
     "description": "bkscr - colorizer, grammar and snippets.",
     "publisher": "Bakery",
